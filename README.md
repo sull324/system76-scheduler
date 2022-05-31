@@ -1,6 +1,21 @@
 # System76 Scheduler
+![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/package/system76-scheduler/status_image/last_build.png?)
 
-Scheduling service which optimizes Linux's CPU scheduler and automatically assigns process priorities for improved desktop responsiveness. Low latency CPU scheduling will be activated automatically when on AC, and the default scheduling latencies set on battery. Processes are regularly sweeped and assigned process priorities based on configuration files. When combined with [pop-shell](https://github.com/pop-os/shell/), foreground processes and their sub-processes will be given higher process priority.
+## Releases
+
+You can get releases for Fedora, RHEL, CentOS, OpenSUSE, and OpenMandriva from my [Copr](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/).
+
+See the below table for changes needed depending on your desktop environment.
+
+| Desktop Environment | Support                                                                      |
+|---------------------|------------------------------------------------------------------------------|
+| GNOME               | [Extension](https://extensions.gnome.org/extension/4854/system76-scheduler/) |
+| KDE                 | [Kwin Script](https://store.kde.org/p/1789957)                               |
+| Pop Shell           | Built-in                                                                     |
+
+## About
+
+Scheduling service which optimizes Linux's CPU scheduler and automatically assigns process priorities for improved desktop responsiveness. Low latency CPU scheduling will be activated automatically when on AC, and the default scheduling latencies set on battery. Processes are regularly sweeped and assigned process priorities based on configuration files. When combined with a supported desktop environment, foreground processes and their sub-processes will be given higher process priority.
 
 These changes result in a noticeable improvement in the experienced smoothness and performance of applications and games. The improved responsiveness of applications is most noticeable on older systems with budget hardware, whereas games will benefit from higher framerates and reduced jitter. This is because background applications and services will be given a smaller portion of leftover CPU budget after the active process has had the most time on the CPU.
 
