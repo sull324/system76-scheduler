@@ -1,0 +1,14 @@
+// WARNING: Modifications to this file will not be preserved on upgrade.
+// To configure, make new .ron files under /etc/system76-scheduler/assignments/.
+
+{
+// Low
+(9, Idle): [
+    "protonmail-bridge",
+    "rslsync",
+    "fx_cast_bridge",
+],
+// Absolute lowest priority
+(19, Idle): [
+    "duperemove",
+]}
