@@ -2,7 +2,7 @@
 
 ## Releases
 
-You can get releases for Fedora from my [COPR](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/).
+You can get releases for Fedora and OpenSUSE from my [COPR](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/).
 This scheduler is supported by [pop-shell](https://github.com/pop-os/shell/), or may be used in GNOME with [mjakeman's extension](https://extensions.gnome.org/extension/4854/system76-scheduler/).
 
 ## About

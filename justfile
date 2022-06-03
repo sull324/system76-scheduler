@@ -1,4 +1,5 @@
 rootdir := ''
+unitdir := ''
 prefix := '/usr'
 sysconfdir := '/etc'
 root := rootdir + prefix
@@ -15,6 +16,7 @@ id := 'com.system76.Scheduler'
 
 bindir := root + '/bin'
 libdir := root + '/lib'
+systemd := rootdir + unitdir
 confdir := rootdir + sysconfdir
 
 target_bin := bindir + '/' + binary
@@ -41,14 +43,14 @@ install:
     install -Dm0644 data/assignments-extra.ron {{confdir}}/system76-scheduler/assignments/extra.ron
     install -Dm0644 data/exceptions.ron {{confdir}}/system76-scheduler/exceptions/default.ron
     install -Dm04755 target/{{target}}/{{binary}} {{target_bin}}
-    install -Dm0644 data/{{id}}.service {{libdir}}/systemd/system/{{id}}.service
+    install -Dm0644 data/{{id}}.service {{systemd}}/{{id}}.service
     install -Dm0644 data/{{id}}.conf {{confdir}}/dbus-1/system.d/{{id}}.conf
 
 # Uninstalls everything (requires same arguments as given to install)
 uninstall:
     rm -rf {{confdir}}/system76-scheduler \
         {{confdir}}/dbus-1/system.d/{{id}}.conf \
-        {{libdir}}/systemd/system/{{id}}.service \
+        {{systemd}}/{{id}}.service \
         {{target_bin}}
 
 # Vendor Cargo dependencies locally
