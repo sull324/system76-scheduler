@@ -1,16 +1,17 @@
 # System76 Scheduler
+![Build Status](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/package/system76-scheduler/status_image/last_build.png?)
 
 ## Releases
 
-You can get releases for Fedora, OpenSUSE, and OpenMandriva from my [COPR](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/).
+You can get releases for Fedora, RHEL, CentOS, OpenSUSE, and OpenMandriva from my [COPR](https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/).
 
 See the below table for changes needed depending on your desktop environment.
 
-| Desktop Environment | Support       |
-|---------------------|---------------|
+| Desktop Environment | Support                                                                      |
+|---------------------|------------------------------------------------------------------------------|
 | GNOME               | [Extension](https://extensions.gnome.org/extension/4854/system76-scheduler/) |
-| KDE                 | [Kwin Script](https://store.kde.org/p/1789957) |
-| Pop Shell           | Built-in      |
+| KDE                 | [Kwin Script](https://store.kde.org/p/1789957)                               |
+| Pop Shell           | Built-in                                                                     |
 
 ## About
 

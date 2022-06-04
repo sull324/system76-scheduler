@@ -39,7 +39,6 @@ install:
         {{confdir}}/system76-scheduler/exceptions
     install -Dm0644 data/config.ron {{confdir}}/system76-scheduler/config.ron
     install -Dm0644 data/assignments.ron {{confdir}}/system76-scheduler/assignments/default.ron
-    install -Dm0644 data/assignments-rhel.ron {{confdir}}/system76-scheduler/assignments/rhel.ron
     install -Dm0644 data/assignments-extra.ron {{confdir}}/system76-scheduler/assignments/extra.ron
     install -Dm0644 data/exceptions.ron {{confdir}}/system76-scheduler/exceptions/default.ron
     install -Dm04755 target/{{target}}/{{binary}} {{target_bin}}

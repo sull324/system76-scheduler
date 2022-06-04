@@ -4,11 +4,15 @@
 {
 // Low
 (9, Idle): [
+    "fx_cast_bridge",
     "protonmail-bridge",
     "rslsync",
-    "fx_cast_bridge",
 ],
 // Absolute lowest priority
 (19, Idle): [
+    "dnf",
     "duperemove",
+    "rpm",
+    "yum",
+    "zypper",
 ]}
