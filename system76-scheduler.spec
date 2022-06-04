@@ -27,6 +27,10 @@ BuildRequires:  glibc-static-devel
 Auto-configure CFS and process priorities for improved desktop responsiveness 
 
 %define debug_package %{nil}
+%if 0%{?mdkversion}
+# FIXME this is a workaround for some debug files being created on OpenMandriva despite debug_package being set to %{nil}
+%define _unpackaged_files_terminate_build 0
+%endif
 
 %prep
 {{{ git_dir_setup_macro }}}
