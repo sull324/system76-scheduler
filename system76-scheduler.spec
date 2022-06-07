@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        System76 Scheduler daemon
 
 License:        MPLv2.0
-URL:            https://github.com/KyleGospo/system76-scheduler-for-fedora
+URL:            https://github.com/KyleGospo/system76-scheduler
 
 VCS:        	{{{ git_dir_vcs }}}
 Source:        	{{{ git_dir_pack }}}
@@ -73,6 +73,8 @@ EXECSNOOP_PATH=/usr/share/bcc/tools/execsnoop %{justpath}
 # This lists all the files that are included in the rpm package and that
 # are going to be installed into target system where the rpm is installed.
 %files
+%license LICENSE
+%doc README.md
 %{_bindir}/system76-scheduler
 %{_sysconfdir}/system76-scheduler/config.ron
 %{_sysconfdir}/system76-scheduler/assignments/default.ron
