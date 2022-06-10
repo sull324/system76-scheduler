@@ -41,7 +41,7 @@ install:
     install -Dm0644 data/assignments.ron {{confdir}}/system76-scheduler/assignments/default.ron
     install -Dm0644 data/assignments-extra.ron {{confdir}}/system76-scheduler/assignments/extra.ron
     install -Dm0644 data/exceptions.ron {{confdir}}/system76-scheduler/exceptions/default.ron
-    install -Dm04755 target/{{target}}/{{binary}} {{target_bin}}
+    install -Dm0755 target/{{target}}/{{binary}} {{target_bin}}
     install -Dm0644 data/{{id}}.service {{systemd}}/{{id}}.service
     install -Dm0644 data/{{id}}.conf {{confdir}}/dbus-1/system.d/{{id}}.conf
 
