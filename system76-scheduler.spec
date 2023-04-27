@@ -7,7 +7,7 @@ License:        MPLv2.0
 URL:            https://github.com/KyleGospo/system76-scheduler
 
 VCS:            {{{ git_dir_vcs }}}
-Source:        	{{{ git_dir_pack }}}
+Source:         {{{ git_dir_pack }}}
 
 # Realtime priority if bcc-tools is installed. Not available on OpenMandriva.
 %if ! 0%{?mdkversion}
@@ -83,7 +83,7 @@ cargo install just
 %doc README.md
 %{_bindir}/system76-scheduler
 %{_sysconfdir}/system76-scheduler/config.kdl
-%{_sysconfdir}/system76-scheduler/process-scheduler/fedora.kdl
+%{_sysconfdir}/system76-scheduler/process-scheduler/rhel.kdl
 %{_unitdir}/com.system76.Scheduler.service
 %{_sysconfdir}/dbus-1/system.d/com.system76.Scheduler.conf
 

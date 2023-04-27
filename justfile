@@ -2,13 +2,13 @@ binary := 'system76-scheduler'
 id := 'com.system76.Scheduler'
 
 rootdir := ''
-unitdir := ''
 prefix := '/usr'
 sysconfdir := '/etc'
 
 bindir := clean(rootdir / prefix) / 'bin'
 libdir := clean(rootdir / prefix) / 'lib'
-systemd := rootdir + unitdir
+unitdir := clean(libdir) / 'systemd/system'
+systemd := clean(rootdir / unitdir)
 confdir := clean(rootdir / sysconfdir)
 
 target-bin := bindir / binary
@@ -45,7 +45,7 @@ check-json: (check '--message-format=json')
 install:
     mkdir -p {{confdir}}/system76-scheduler/process-scheduler
     install -Dm0644 data/config.kdl {{confdir}}/system76-scheduler/config.kdl
-    install -Dm0644 data/fedora.kdl {{confdir}}/system76-scheduler/process-scheduler/fedora.kdl
+    install -Dm0644 data/rhel.kdl {{confdir}}/system76-scheduler/process-scheduler/rhel.kdl
     install -Dm0755 target/release/{{binary}} {{target-bin}}
     install -Dm0644 data/{{id}}.service {{systemd}}/{{id}}.service
     install -Dm0644 data/{{id}}.conf {{confdir}}/dbus-1/system.d/{{id}}.conf
