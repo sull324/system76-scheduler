@@ -12,7 +12,7 @@ cfs-profiles enable=true {
     // The kernel-default values which are ideal for battery life and servers
     default latency=6 nr-latency=8 wakeup-granularity=1.0 bandwidth-size=5 preempt="voluntary"
 
-    // Zen CFS parameters that make the desktop more responsive
+    // TKG CFS parameters that make the desktop more responsive
     responsive latency=3 nr-latency=10 wakeup-granularity=0.5 bandwidth-size=3 preempt="full"
 }
 

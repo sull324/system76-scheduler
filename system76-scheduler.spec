@@ -1,7 +1,7 @@
 Name:           system76-scheduler
 Version:        2.{{{ git_dir_version }}}
 Release:        1%{?dist}
-Summary:        System76 Scheduler daemon - Auto-configure CFS and process priorities for improved desktop responsiveness 
+Summary:        Oneshot service to tweak the CFS scheduler on boot. Uses settings from the TKG kernel by default.
 
 License:        MPLv2.0
 URL:            https://github.com/KyleGospo/system76-scheduler
