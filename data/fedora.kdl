@@ -55,6 +55,7 @@ assignments {
 		rpm
 		swupd
 		yay
+		paru
 		yum
 		zypper
 	}
