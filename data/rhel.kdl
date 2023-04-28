@@ -35,6 +35,7 @@ assignments {
 		i3wm
 		kwin
 		sway
+		gamescope
 		Xorg
 	}
 
