@@ -33,8 +33,10 @@ assignments {
 		cosmic-comp
 		gnome-shell
 		i3wm
+		gala
 		kwin
 		sway
+		Hyprland
 		gamescope
 		Xorg
 	}
@@ -58,7 +60,9 @@ assignments {
 		pacman
 		include name="rpm-*"
 		rpm
+		steamos-update
 		swupd
+		ublue-update
 		yay
 		paru
 		yum
