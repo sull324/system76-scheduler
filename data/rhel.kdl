@@ -81,6 +81,7 @@ assignments {
 		clang
 		cmake
 		cpp
+		duperemove
 		FAHClient
 		FAHCoreWrapper
 		fossilize-replay
@@ -94,6 +95,7 @@ assignments {
 		mold
 		mvn
 		ninja
+		rmlint
 		rust-analyzer
 		rustc
 		sbuild
