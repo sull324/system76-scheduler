@@ -112,4 +112,5 @@ exceptions {
 	include name="fig_*"
 	fig
 	vanilla-first-setup
+	yafti
 }
