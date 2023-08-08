@@ -36,6 +36,7 @@ assignments {
 		gala
 		kwin
 		sway
+		surfaceflinger
 		Hyprland
 		gamescope
 		Xorg
@@ -75,6 +76,7 @@ assignments {
 		"7za"
 		"7zr"
 		ar
+		adbd
 		boinc
 		c++
 		cargo
