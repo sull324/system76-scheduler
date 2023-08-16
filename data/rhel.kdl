@@ -33,6 +33,7 @@ assignments {
 		gnome-shell
 		i3wm
 		kwin
+		kwin_wayland
 		sway
 		surfaceflinger
 		Hyprland
