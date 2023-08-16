@@ -10,7 +10,6 @@ assignments {
 		wireplumber
 		zoom
 		bitwig-studio
-		fx_cast_bridge
 		include name="Bitwig*"
 	}
 
@@ -33,7 +32,6 @@ assignments {
 		cosmic-comp
 		gnome-shell
 		i3wm
-		gala
 		kwin
 		sway
 		surfaceflinger
@@ -50,22 +48,20 @@ assignments {
 	package-manager {
 		include name="apt-*"
 		include name="dpkg-*"
+		include name="rpm-*"
+		apk
 		apt
+		dnf
 		dpkg
 		flatpak
 		fwupd
 		packagekitd
-		update-initramfs
-		apk
-		dnf
 		pacman
-		include name="rpm-*"
-		rpm
-		steamos-update
-		swupd
-		ublue-update
-		yay
 		paru
+		rpm
+		ublue-update
+		update-initramfs
+		yay
 		yum
 		zypper
 	}
@@ -98,21 +94,18 @@ assignments {
 		mvn
 		ninja
 		rmlint
+		rslsync
 		rust-analyzer
 		rustc
 		sbuild
+		syncthing
 		tar
 		tracker-miner-fs-3
 		unrar
 		zip
-		rslsync
 	}
 }
 
 exceptions {
-	preload
-	include name="fig_*"
-	fig
-	vanilla-first-setup
-	yafti
+
 }
