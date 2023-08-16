@@ -15,7 +15,6 @@ assignments {
 
 	games {
 		lutris
-		steam
 		heroic
 		itch
 		vrcompositor
@@ -26,6 +25,14 @@ assignments {
 		include descends="lutris"
 		include descends="heroic"
 		include descends="itch"
+
+		//for steam flatpak
+		include descends="pressure-vessel-adverb"
+	}
+
+	steam-background {
+		steam
+		steamwebhelper
 	}
 
 	desktop-environment {
@@ -108,5 +115,4 @@ assignments {
 }
 
 exceptions {
-
 }
