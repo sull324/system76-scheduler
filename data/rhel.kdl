@@ -26,11 +26,12 @@ assignments {
 	}
 
 	games-background {
+		discord
+		heroic
+		itch
 		lutris
 		steam
 		steamwebhelper
-		heroic
-		itch
 	}
 
 	desktop-environment {
