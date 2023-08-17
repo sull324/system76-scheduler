@@ -63,10 +63,12 @@ assignments {
 		dpkg
 		flatpak
 		fwupd
+		ostree
 		packagekitd
 		pacman
 		paru
 		rpm
+		rpm-ostree
 		ublue-update
 		update-initramfs
 		yay
