@@ -18,11 +18,11 @@ assignments {
 		vrdashboard
 		vrmonitor
 		vrserver
-		include descends="steam"
-		include descends="lutris"
 		include descends="heroic"
 		include descends="itch"
+		include descends="lutris"
 		include descends="pressure-vessel-adverb"
+		include descends="steam"
 	}
 
 	games-background {
@@ -36,14 +36,15 @@ assignments {
 
 	desktop-environment {
 		cosmic-comp
+		gamescope
 		gnome-shell
+		Hyprland
 		i3wm
 		kwin
 		kwin_wayland
+		opengamepadui
 		sway
 		surfaceflinger
-		Hyprland
-		gamescope
 		Xorg
 	}
 
