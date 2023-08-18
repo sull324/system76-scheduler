@@ -15,7 +15,6 @@ assignments {
 
 	games {
 		lutris
-		steam
 		heroic
 		itch
 		vrcompositor
@@ -26,6 +25,21 @@ assignments {
 		include descends="lutris"
 		include descends="heroic"
 		include descends="itch"
+
+		//for steam flatpak
+		include descends="pressure-vessel-adverb"
+		//for steamthinkerlaunch and certain customs version of proton
+		include descends="reaper"
+	}
+
+	desktop-background {
+		steam
+		steamwebhelper
+		plasmashell
+	}
+	torrent-clients {
+		qbittorrent
+		deluge
 	}
 
 	desktop-environment {
@@ -33,6 +47,7 @@ assignments {
 		gnome-shell
 		i3wm
 		kwin
+		kwin_wayland
 		sway
 		surfaceflinger
 		Hyprland
@@ -55,6 +70,7 @@ assignments {
 		dpkg
 		flatpak
 		fwupd
+		ostree
 		packagekitd
 		pacman
 		paru
@@ -107,5 +123,4 @@ assignments {
 }
 
 exceptions {
-
 }
